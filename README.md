@@ -30,6 +30,12 @@ For CIFAR-10 we use `torchvision`. The FEMNIST dataset has to be downloaded manu
 
 ## Running CPFL
 
+First, make sure that the Python interpreter can find all required modules:
+
+```
+export PYTHONPATH=$PWD:$PWD/pyipv8
+```
+
 Training with CPFL can be done by invoking the following scripts from the root of the repository:
 
 ```
