@@ -16,7 +16,7 @@ Compared to traditional FL, CPFL with four cohorts, non-IID data distribution, a
 Start by cloning the repository recursively (since CPFL depends on the PyIPv8 networking library):
 
 ```
-git clone git@github.com:sacs-epfl/cpfl.git --recursive
+git clone https://github.com/sacs-epfl/cpfl --recursive
 ```
 
 Install the required dependencies (preferably in a virtual environment to avoid conflicts with existing libraries):
