@@ -47,6 +47,7 @@ bash scripts/cohorts/run_2e2_femnist.sh <number_of_cohorts> <seed>
 ```
 
 We refer to the respective bash scripts for more configuration options, such as the number of local steps, the number of participants, and other learning parameters.
+For example, you can speed up the experiment execution by enabling CUDA by passing `--train-device-name "cuda:0" --accuracy-device-name "cuda:0"` to the scripts in the `simulations/cpfl` directory.
 
 The script first splits the data across participants and participants across cohorts. These assignments are used during the distillation process.
 Then during FL training, each cohort will periodically checkpoint the current global model, as well as checkpointing the current best model (based on the loss obtained with a validation testset). The output of this experiment can be found in a separate folder in the `data` directory.
